@@ -5,7 +5,7 @@
 
 E-commerce increased dramatically as a result of COVID-19 movement restrictions and fears. The convenience of online shopping continues to make consumers more reliant and retailers continue to find new ways to keep up with the demand. [Many small businesses](https://www.chargebackgurus.com/blog/contactless-payment-limits-increase) were pushed to enter the realm of e-commerce during the pandemic and are now reaching customers outside of their local area.
 
-<img src="https://english.news.cn/20220316/aed3e20f331940c4b8c2b16c1f15b2e6/20220316aed3e20f331940c4b8c2b16c1f15b2e6_96e22deb2-5cd2-4a33-9335-c119411a9451.jpg.jpg" alt=" Image of Product Launch" style="width: 550px;"/>
+<img src="https://campuscu.com/media/7470/card-theft2.jpg" alt="Campus USA Credit Union Photo Protecting Your Credit Card From Fraud" style="width: 700px;"/>
 
 ## Business Problem
 
@@ -17,6 +17,8 @@ Shopify has contracted us to build an accesible credit card fraud detection tool
 
 We will provide Shopify with a machine learning model that can detect credit card fraud transactions by analyzing patterns to identify anomalies.
 
+<img src="https://images.business.com/app/uploads/2022/08/01034530/shopify.png" alt="Shopify Logo" style="width: 550px;"/>
+
 ## Data
 
 The credit card transaction dataset we used can be obtained [here](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?datasetId=310&sortBy=relevance). The dataset contains online transactions made in September 2013 over two days using European credit cards. The transactions are labeled as either fraudulent or non-fraudulent.
@@ -26,17 +28,17 @@ The primary role of this project is to learn about data imbalance. This dataset 
 
 ## Methods
 
-    1. Load and Preprocess the data. Load data into a pandas DataFrame, preprocess it to remove duplicates, check for nulls, and detect outliers. Perform initial data exploration to get better understanding of data. 
+1. Load and Preprocess the data. Load data into a pandas DataFrame, preprocess it to remove duplicates, check for nulls, and detect outliers. Perform initial data exploration to get better understanding of data. 
 
-    2. Exploratory Data Analysis, we will visualize the data to get insights into the features. We will compare the distributions of each feature.
+2. Exploratory Data Analysis, we will visualize the data to get insights into the features. We will compare the distributions of each feature.
     
-    3. Data Split. Split data into training, validation, and test sets. Training set is used to train machine learning model, training set is used to evaluate performance of models during training, and the test set is used to evaluate final performance. It is important that the class distribution is preserved across the sets.
+3. Data Split. Split data into training, validation, and test sets. Training set is used to train machine learning model, training set is used to evaluate performance of models during training, and the test set is used to evaluate final performance. It is important that the class distribution is preserved across the sets.
     
-    4. Build and Evaluate a Baseline Model. A baseline model will help establish a benchmark to compare the performance of other models. 
+4. Build and Evaluate a Baseline Model. A baseline model will help establish a benchmark to compare the performance of other models. 
 
-    5. Iteratively Perform and Evaluate Imbalance Techniques. Investigate different algorithms and techniques to determine whether they should be part the final model. Evaluate the model's performance using various metrics, mainly recall  as well as F1 score and ROC-AUC. We will check that the model can detect fraud (true positives) without producing too many false positives.
+5. Iteratively Perform and Evaluate Imbalance Techniques. Investigate different algorithms and techniques to determine whether they should be part the final model. Evaluate the model's performance using various metrics, mainly recall  as well as F1 score and ROC-AUC. We will check that the model can detect fraud (true positives) without producing too many false positives.
 
-    6. Evaluate a Final Model on the Test Set. Fine tune hyper-parameters of the final model to optimize perofrmnace. Interpret final model to understand how it is making predictions and which features are most important. 
+6. Evaluate a Final Model on the Test Set. Fine tune hyper-parameters of the final model to optimize perofrmnace. Interpret final model to understand how it is making predictions and which features are most important. 
 
 ## Results
 
@@ -88,7 +90,7 @@ Not only will our model prevent fraud transactions from going undetected, it wil
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](</_Modeling.ipynb>) or review this [presentation](</_Presentation.pdf>).
+See the full analysis in the [Jupyter Notebook](</fraud_detection_modeling.ipynb>) or review this [presentation](</presentation.pdf>).
 
 For additional info, contact Brenda De Leon at [brendardeleon@gmail.com](mailto:brendardeleon@gmail.com)
 
@@ -97,9 +99,9 @@ For additional info, contact Brenda De Leon at [brendardeleon@gmail.com](mailto:
 ```
 ├── data
 │   ├── creditcard.csv
-│   └── .csv
-├── .ipynb
-├── .ipynb
-├── .pdf
+│   └── clean_df.csv
+├── fraud_detection_EDA.ipynb
+├── fraud_detection_modeling.ipynb
+├── presentation.pdf
 └── README.md
 ```
