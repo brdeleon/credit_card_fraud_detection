@@ -1,11 +1,10 @@
 # Credit Card Fraud Detection
 **Author**: [Brenda De Leon](mailto:brendardeleon@gmail.com)
+<img src="https://campuscu.com/media/7470/card-theft2.jpg" alt="Campus USA Credit Union Photo Protecting Your Credit Card From Fraud" style="width: 750px;"/>
 
 ## Overview
 
 E-commerce increased dramatically as a result of COVID-19 movement restrictions and fears. The convenience of online shopping continues to make consumers more reliant and retailers continue to find new ways to keep up with the demand. [Many small businesses](https://www.chargebackgurus.com/blog/contactless-payment-limits-increase) were pushed to enter the realm of e-commerce during the pandemic and are now reaching customers outside of their local area.
-
-<img src="https://campuscu.com/media/7470/card-theft2.jpg" alt="Campus USA Credit Union Photo Protecting Your Credit Card From Fraud" style="width: 700px;"/>
 
 ## Business Problem
 
@@ -17,7 +16,6 @@ Shopify has contracted us to build an accesible credit card fraud detection tool
 
 We will provide Shopify with a machine learning model that can detect credit card fraud transactions by analyzing patterns to identify anomalies.
 
-<img src="https://images.business.com/app/uploads/2022/08/01034530/shopify.png" alt="Shopify Logo" style="width: 550px;"/>
 
 ## Data
 
@@ -81,12 +79,14 @@ Not only will our model prevent fraud transactions from going undetected, it wil
 - <b>Value of quick fraud detection</b>
 - <b>Competitive advantage</b>
 
+<img src="https://images.business.com/app/uploads/2022/08/01034530/shopify.png" alt="Shopify Logo" style="width: 500px;"/>
+
 ### Next Steps
 
-    - More data could significantly improve our prediction ability.
-    - Take a closer look at the features that showed possible multicolinearity.
-    - Use example dependent cost sensitive learning to weigh the cost of misclassification based on the transaction amount. 
-    - Use feature importance to improve our model, removing those features with lower scores. 
+  - More data could significantly improve our prediction ability.
+  - Take a closer look at the features that showed possible multicolinearity.
+  - Use example dependent cost sensitive learning to weigh the cost of misclassification based on the transaction amount. 
+  - Use feature importance to improve our model, removing those features with lower scores. 
 
 ## For More Information
 
