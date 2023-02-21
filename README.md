@@ -24,7 +24,6 @@ The credit card transaction dataset we used can be obtained [here](https://www.k
 <b>Data Understanding:</b> 
 The primary role of this project is to learn about data imbalance. This dataset will allow me to explore techniques and tools to work with imbalanced data. 
 
-***
 ## Methods
 
     1. Load and Preprocess the data. Load data into a pandas DataFrame, preprocess it to remove duplicates, check for nulls, and detect outliers. Perform initial data exploration to get better understanding of data. 
@@ -39,13 +38,10 @@ The primary role of this project is to learn about data imbalance. This dataset 
 
     6. Evaluate a Final Model on the Test Set. Fine tune hyper-parameters of the final model to optimize perofrmnace. Interpret final model to understand how it is making predictions and which features are most important. 
 
-***
-
 ## Results
 
 We built a <b>Gradient Boosting Classification</b> model that is able to classify an online credit card transaction as fraudulent or non-fradulent.
-
-We can detect a fraudulent transaction at an accuracy of 88% and at an f1 macro score of 73%.
+Our model provides credit card fraud detection with an accuracy of 99%, a macro recall score of 94%, recall score of 89% for the positive class, and a maco f1 score of 66%, only 8 fraud transactions were not detected and the number of false positives were minimized. 
 
 ![final model](/finalmodel.png)
 
@@ -74,23 +70,21 @@ We have determined which features are most important in classifying a transactio
 
 ## Conclusions
 
-Google can use this classification model to identify the emotion of tweets about a particular topic, the topic could be past launches, new products, or the brand itself. With Google's upcoming launch, Google can analyze the words, phrases, and hashtags of past launches by sentiment to better understand the audience's reception to the launch to help shape the strategy for the new launch. Equally, Google can use this model during the launch for real time feedback and after the launch to analyze for feedback. By classifying tweets into sentiment classes, Google will be able to extract more meaningful patterns with the help of word clouds and graphs. 
+Shopify can use this classification model to detect fraudulent credit card transactions. 
 
+Not only will our model prevent fraud transactions from going undetected, it will also provide Shopify and it's retailers with these additional benefits:
 
-![google negative cloud](/google%20negative%20word%20cloud.png)
-
-<br>
-
-![google positive graph](/googlepositivehashtag.png)
+- <b>Building trust with retailers</b>
+- <b>Protection from potential legal implications</b> 
+- <b>Value of quick fraud detection</b>
+- <b>Competitive advantage</b>
 
 ### Next Steps
 
- - Better data collection could significantly improve our prediction ability. We have an imbalanced dataset with majority "Neutral" sentiment values. More data, particularly for the minority classes could improve the model's performance. Additionally, some of the tweets were mislabeled, for next steps our model could benefit from training on more accurate labeled tweets.
- - Include new data by web scraping tweets so that we are able to collect usernames of tweet poster and so that our model is able to train on newer and larger data.
- - Use specific tweet tokenizer so that our model is able to handle emojis.
- - Engineer additional features like assigning a sentiment intensity score to each tweet using nltk' vader package.
- - Given the high weight the random forest algorithm gives to the hashtags feature, we should further inspect it for patterns.
- - Use feature importance to improve our model, removing those features with lower scores.
+    - More data could significantly improve our prediction ability.
+    - Take a closer look at the features that showed possible multicolinearity.
+    - Use example dependent cost sensitive learning to weigh the cost of misclassification based on the transaction amount. 
+    - Use feature importance to improve our model, removing those features with lower scores. 
 
 ## For More Information
 
