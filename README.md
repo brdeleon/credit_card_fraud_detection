@@ -21,6 +21,10 @@ We will provide Shopify with a machine learning model that can detect credit car
 
 The credit card transaction dataset we used can be obtained [here](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?datasetId=310&sortBy=relevance). The dataset contains online transactions made in September 2013 over two days using European credit cards. The transactions are labeled as either fraudulent or non-fraudulent.
 
+With the positive (fraudulent) class only representing 0.0017 of the cases, we will compare different methods to addressing the dataset's high imbalance. 
+
+![distributionoftime](/distributionoftime.png)
+
 <b>Data Understanding:</b> 
 The primary role of this project is to learn about data imbalance. This dataset will allow me to explore techniques and tools to work with imbalanced data. 
 
