@@ -1,4 +1,6 @@
-# Credit Card Fraud Detection
+# Fraud Detection for Credit Card Transactions
+
+## Preventing Financial Losses with Machine Learning
 **Author**: [Brenda De Leon](mailto:brendardeleon@gmail.com)
 <img src="https://campuscu.com/media/7470/card-theft2.jpg" alt="Campus USA Credit Union Photo Protecting Your Credit Card From Fraud" style="width: 750px;"/>
 
